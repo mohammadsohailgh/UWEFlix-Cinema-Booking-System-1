@@ -9,6 +9,18 @@ from django.views.generic import ListView
 def student_view(request):
     return render(request, "UWEFlix/student.html")
 
+# About page view navigated from navbar
+def about(request):
+    return render(request, "UWEFlix/about.html")
+
+# View to provide representative a UI to manage films
+def movies(request):
+    return render(request, "UWEFlix/movies.html")
+
+# About page view navigated from navbar
+def login(request):
+    return render(request, "UWEFlix/login.html")
+
 # View to provide cinema manager a UI to manage films
 def cinema_management_view(request):
     return render(request, "UWEFlix/cinema_manager.html")
